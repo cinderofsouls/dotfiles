@@ -1,0 +1,7 @@
+admonition
+advanced tables
+editor syntax highlight
+kanban
+latex environments
+quick latex for obsidian
+spaced repetition
