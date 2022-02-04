@@ -1,0 +1,34 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
+#powerline
+powerline-daemon -q
+. /usr/share/powerline/bindings/zsh/powerline.zsh
+
+# custom variables
+export EDITOR=vim
+
+# custom aliases
+alias sudo="echo 'use doas instead'"
+alias doas="doas "
+
+alias xl="exa -alFh"
+alias x1="exa -1"
+alias ll="ls -alFh"
+alias l1="ls -1"
+alias quit="exit"
+alias cls="clear"
+alias gs="git status"
+alias update-grub="grub-mkconfig -o /boot/grub/grub.cfg"
+source /home/cinderofsouls/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export PATH=/home/cinderofsouls/.local/bin:$PATH
+
+source ~/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
