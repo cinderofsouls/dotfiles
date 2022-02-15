@@ -15,6 +15,10 @@
     ~/.config/awesome/custom_theme.lua: awesome/custom_theme.lua
     ~/.config/awesome/rc.lua: awesome/rc.lua
 
+    ~/.doom.d/config.el: doom-emacs/config.el
+    ~/.doom.d/init.el: doom-emacs/init.el
+    ~/.doom.d/packages.el: doom-emacs/packages.el
+
     ~/.config/i3/config: i3/config
 
     ~/.config/kitty/colors.conf: kitty/colors.conf
