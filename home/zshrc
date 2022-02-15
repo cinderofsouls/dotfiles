@@ -26,7 +26,8 @@ alias gs="git status"
 alias update-grub="grub-mkconfig -o /boot/grub/grub.cfg"
 source /home/cinderofsouls/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export PATH=/home/cinderofsouls/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.emacs.d/bin:$PATH
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
