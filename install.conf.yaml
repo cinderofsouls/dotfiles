@@ -15,6 +15,8 @@
     ~/.config/awesome/custom_theme.lua: awesome/custom_theme.lua
     ~/.config/awesome/rc.lua: awesome/rc.lua
 
+    ~/.config/i3/config: i3/config
+
     ~/.config/kitty/colors.conf: kitty/colors.conf
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
 
