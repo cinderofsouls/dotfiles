@@ -27,5 +27,8 @@
 
     ~/.config/picom/picom.conf: picom/picom.conf
 
+    ~/.config/polybar/config: polybar/config
+    ~/.config/polybar/launch.sh: polybar/launch.sh
+
     ~/.config/qtile/autostart.sh: qtile/autostart.sh
     ~/.config/qtile/config.py: qtile/config.py
