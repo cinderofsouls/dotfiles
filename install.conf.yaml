@@ -12,15 +12,19 @@
     ~/.zshrc: home/zshrc
     
     ~/.doom.d: doom-emacs
+    ~/.screenlayout/layout.sh: layout.sh
 
     ~/.config/awesome/autostart.sh: awesome/autostart.sh
     ~/.config/awesome/custom_theme.lua: awesome/custom_theme.lua
     ~/.config/awesome/rc.lua: awesome/rc.lua
 
+    ~/.config/i3/autostart.sh: i3/autostart.sh
     ~/.config/i3/config: i3/config
 
     ~/.config/kitty/colors.conf: kitty/colors.conf
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
+
+    ~/.config/picom/picom.conf: picom/picom.conf
 
     ~/.config/qtile/autostart.sh: qtile/autostart.sh
     ~/.config/qtile/config.py: qtile/config.py
