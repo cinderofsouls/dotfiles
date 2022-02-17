@@ -20,6 +20,7 @@
 
     ~/.config/i3/autostart.sh: i3/autostart.sh
     ~/.config/i3/config: i3/config
+    ~/.config/i3status/config: i3/i3status.conf
 
     ~/.config/kitty/colors.conf: kitty/colors.conf
     ~/.config/kitty/kitty.conf: kitty/kitty.conf
