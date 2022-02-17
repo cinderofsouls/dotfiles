@@ -177,7 +177,8 @@ exec_always --no-startup-id ~/.config/i3/autostart.sh
 # default_floating_border pixel
 for_window [class=".*"] border pixel 2
 gaps inner 10
+client.focused          #4c7899 #285577 #ffffff #2e9ef4 #5e637e
+client.focused_inactive #333333 #5f676a #ffffff #484e50 #3f4255
 
 workspace 1 output DP-2
 workspace 2 output DP-4
-
