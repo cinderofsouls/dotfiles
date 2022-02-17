@@ -51,14 +51,8 @@ bindsym $mod+Return exec kitty
 # kill focused window
 bindsym $mod+Shift+q kill
 
-# start dmenu (a program launcher)
-#bindsym $mod+d exec --no-startup-id dmenu_run
-bindsym $mod+d exec rofi -show run
-# A more modern dmenu replacement is rofi:
-# bindcode $mod+40 exec "rofi -modi drun,run -show drun"
-# There also is i3-dmenu-desktop which only displays applications shipping a
-# .desktop file. It is a wrapper around dmenu, so you need that installed.
-# bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
+# start rofi (a program launcher)
+bindsym $mod+r exec rofi -show run
 
 # change focus
 bindsym $mod+h focus left
@@ -77,12 +71,6 @@ bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
-#bindsym $mod+Shift+Left move left
-#bindsym $mod+Shift+Down move down
-#bindsym $mod+Shift+Up move up
-#bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+Control+h split h
@@ -152,39 +140,29 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+set $lockscreen "betterlockscreen -l"
+bindsym $mod+Control+Shift+l exec $lockscreen
 
-## resize window (you can also use the mouse for that)
-#mode "resize" {
-#        # These bindings trigger as soon as you enter the resize mode
-#
-#        # Pressing left will shrink the window’s width.
-#        # Pressing right will grow the window’s width.
-#        # Pressing up will shrink the window’s height.
-#        # Pressing down will grow the window’s height.
-#        bindsym h resize shrink width 5 px or 5 ppt
-#        bindsym j resize grow height 5 px or 5 ppt
-#        bindsym k resize shrink height 5 px or 5 ppt
-#        bindsym l resize grow width 5 px or 5 ppt
-#
-#        # same bindings, but for the arrow keys
-#        bindsym Left resize shrink width 5 px or 5 ppt
-#        bindsym Down resize grow height 5 px or 5 ppt
-#        bindsym Up resize shrink height 5 px or 5 ppt
-#        bindsym Right resize grow width 5 px or 5 ppt
-#
-#        # back to normal: Enter or Escape or $mod+r
-#        bindsym Return mode "default"
-#        bindsym Escape mode "default"
-#        bindsym $mod+r mode "default"
-#}
+set $mode_system System: (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (CTRL+s) shutdown
+mode "$mode_system" {
+     bindsym l exec --no-startup-id $lockscreen, mode "default"
+     bindsym e exec --no-startup-id i3-msg exit, mode "default"
+     bindsym s exec --no-startup-id $lockscreen && systemctl suspend, mode "default"
+     bindsym h exec --no-startup-id $lockscreen && systemctl hibernate, mode "default"
+     bindsym r exec --no-startup-id $lockscreen && systemctl reboot, mode "default"
+     bindsym Control+s exec --no-startup-id systemctl poweroff -i, mode "default"
 
-bindsym $mod+Shift+Left resize grow width 5 px or 5 ppt
+     bindsym Return mode "default"
+     bindsym Escape mode "default"
+}
+bindsym $mod+BackSpace mode "$mode_system"
+
+bindsym $mod+Shift+Left resize shrink width 5 px or 5 ppt
 bindsym $mod+Shift+Down resize shrink height 5 px or 5 ppt
 bindsym $mod+Shift+Up resize grow height 5 px or 5 ppt
-bindsym $mod+Shift+Right resize shrink width 5 px or 5 ppt
+bindsym $mod+Shift+Right resize grow width 5 px or 5 ppt
 
-bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -202,3 +180,4 @@ gaps inner 10
 
 workspace 1 output DP-2
 workspace 2 output DP-4
+
