@@ -18,6 +18,8 @@
     ~/.config/awesome/custom_theme.lua: awesome/custom_theme.lua
     ~/.config/awesome/rc.lua: awesome/rc.lua
 
+    ~/.config/dunst/dunstrc: dunst/dunstrc
+
     ~/.config/i3/autostart.sh: i3/autostart.sh
     ~/.config/i3/config: i3/config
     ~/.config/i3status/config: i3/i3status.conf

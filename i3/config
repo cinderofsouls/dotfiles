@@ -175,6 +175,7 @@ bindsym --release Print exec --no-startup-id "killall flameshot ; flameshot gui"
 # }
 
 exec_always --no-startup-id ~/.config/i3/autostart.sh
+exec_always --no-startup-id dunst -config ~/.config/dunst/dunstrc
 
 # default_border pixel
 # default_floating_border pixel
