@@ -6,16 +6,18 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 #powerline
-powerline-daemon -q
-. /usr/share/powerline/bindings/zsh/powerline.zsh
+#powerline-daemon -q
+#. /usr/share/powerline/bindings/zsh/powerline.zsh
 
 # custom variables
 export EDITOR=vim
+export GRAVEYARD=~/.local/share/Trash/rm-improved
 
 # custom aliases
 alias sudo="echo 'use doas instead'"
 alias doas="doas "
 
+alias nv="nvim"
 alias xl="exa -alFh"
 alias x1="exa -1"
 alias ll="ls -alFh"
