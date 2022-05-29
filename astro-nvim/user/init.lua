@@ -70,6 +70,13 @@ local config = {
       --     require("lsp_signature").setup()
       --   end,
       -- },
+      {
+        "TimUntersberger/neogit",
+        requires = "nvim-lua/plenary.nvim",
+        config = function()
+          require("neogit").setup()
+        end,
+      },
     },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
