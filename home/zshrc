@@ -26,7 +26,6 @@ alias quit="exit"
 alias cls="clear"
 alias gs="git status"
 alias update-grub="grub-mkconfig -o /boot/grub/grub.cfg"
-source /home/cinderofsouls/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 setopt extendedglob
 
@@ -35,6 +34,7 @@ export PATH=$HOME/.emacs.d/bin:$PATH
 export PATH=$HOME/.nimble/bin:$PATH
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+source /home/cinderofsouls/git/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
