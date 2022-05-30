@@ -22,6 +22,8 @@
 
     ~/.config/dunst/dunstrc: dunst/dunstrc
 
+    ~/.config/helix/config.toml: helix/config.toml
+
     ~/.config/i3/autostart.sh: i3/autostart.sh
     ~/.config/i3/config: i3/config
     ~/.config/i3status/config: i3/i3status.conf

@@ -18,6 +18,7 @@ alias sudo="echo 'use doas instead'"
 alias doas="doas "
 
 alias nv="nvim"
+alias hx="helix"
 alias xl="exa -alFh"
 alias x1="exa -1"
 alias ll="ls -alFh"
