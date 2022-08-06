@@ -14,7 +14,7 @@ export EDITOR=vim
 export GRAVEYARD=~/.local/share/Trash/rm-improved
 
 # custom aliases
-alias sudo="echo 'use doas instead'"
+#alias sudo="echo 'use doas instead'"
 alias doas="doas "
 
 alias nv="nvim"
@@ -26,6 +26,7 @@ alias l1="ls -1"
 alias quit="exit"
 alias cls="clear"
 alias gs="git status"
+alias z="zoxide"
 alias update-grub="grub-mkconfig -o /boot/grub/grub.cfg"
 
 setopt extendedglob
