@@ -18,6 +18,7 @@ export GRAVEYARD=~/.local/share/Trash/rm-improved
 alias doas="doas "
 
 alias nv="nvim"
+alias lv="lvim"
 alias hx="helix"
 alias xl="exa -alFh"
 alias x1="exa -1"

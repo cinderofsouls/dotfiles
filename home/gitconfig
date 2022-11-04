@@ -12,3 +12,7 @@
 [safe]
 	directory = /home/cinderofsouls/.dotfiles/dotbot
 	directory = /home/cinderofsouls/.dotfiles/dotbot
+[init]
+	defaultBranch = main
+[core]
+	editor = helix

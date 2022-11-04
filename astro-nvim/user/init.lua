@@ -2,7 +2,9 @@ local config = {
 
   -- Set colorscheme
   -- colorscheme = "default_theme",
-  colorscheme = "dracula",
+  -- colorscheme = "dracula",
+  colorscheme = "catppuccin",
+  -- colorscheme = "onedark",
 
   -- set vim options here (vim.<first_key>.<second_key> =  value)
   options = {
