@@ -19,15 +19,15 @@
 [colors]
 ;background = ${xrdb:color0:#222}
 ;background = #222
-background = #1e2029
+background = #1e1e28
 ;background-alt = #444
 background-alt = #363949
 ;foreground = ${xrdb:color7:#222}
-foreground = #dfdfdf
+foreground = #cad3f5
 foreground-alt = #555
-primary = #bd93f9
-secondary = #e60053
-alert = #bd2c40
+primary = #8aadf4
+secondary = #ed8796
+alert = #ee99a0
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
@@ -54,7 +54,8 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = "mononoki-Regular Nerd Font Complete Mono:size=11;1"
+;font-0 = "mononoki-Regular Nerd Font Complete Mono:size=11;1"
+font-0 = "Fira Code Regular Nerd Font Complete Mono:size=11;1"
 ;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-1 = "Unifont"
 font-2 = siji:pixelsize=11;1
