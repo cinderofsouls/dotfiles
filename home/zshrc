@@ -18,7 +18,7 @@ export GRAVEYARD=~/.local/share/Trash/rm-improved
 alias doas="doas "
 
 alias nv="nvim"
-alias lv="lvim"
+# alias lv="lvim"
 alias hx="helix"
 alias xl="exa -alFh"
 alias x1="exa -1"
@@ -27,8 +27,9 @@ alias l1="ls -1"
 alias quit="exit"
 alias cls="clear"
 alias gs="git status"
-alias z="zoxide"
 alias update-grub="grub-mkconfig -o /boot/grub/grub.cfg"
+
+hex() { /home/trevor/.cargo/bin/hx "$@" ;} # "alias" `hx` to `hex` so it doesnt conflict with my `helix` alias
 
 setopt extendedglob
 
@@ -43,3 +44,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
