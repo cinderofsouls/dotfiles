@@ -1,6 +1,6 @@
 [user]
-	name = Trevor Tilby
-	email = trevor.tilby@gmail.com
+	name = cndofx
+	email = 19335833+cndofx@users.noreply.github.com
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
@@ -10,9 +10,8 @@
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
 [safe]
-	directory = /home/cinderofsouls/.dotfiles/dotbot
-	directory = /home/cinderofsouls/.dotfiles/dotbot
+	directory = /opt/flutter
 [init]
 	defaultBranch = main
 [core]
-	editor = helix
+	editor = nvim
