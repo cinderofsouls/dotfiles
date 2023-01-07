@@ -10,7 +10,7 @@
     ~/.vimrc: home/vimrc
     ~/.Xresources: home/Xresources
     ~/.zshrc: home/zshrc
-    
+
     ~/.doom.d: doom-emacs
     ~/.screenlayout/layout.sh: layout.sh
 
@@ -21,6 +21,8 @@
     ~/.config/awesome/rc.lua: awesome/rc.lua
 
     ~/.config/dunst/dunstrc: dunst/dunstrc
+
+    ~/.config/fish: fish
 
     ~/.config/helix/config.toml: helix/config.toml
 
