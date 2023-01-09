@@ -38,3 +38,5 @@
 
     ~/.config/qtile/autostart.sh: qtile/autostart.sh
     ~/.config/qtile/config.py: qtile/config.py
+
+    ~/.config/systemd: systemd
