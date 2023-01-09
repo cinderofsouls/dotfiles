@@ -14,8 +14,6 @@
     ~/.doom.d: doom-emacs
     ~/.screenlayout/layout.sh: layout.sh
 
-    ~/.config/nvim/lua/user: astro-nvim/user
-
     ~/.config/awesome/autostart.sh: awesome/autostart.sh
     ~/.config/awesome/custom_theme.lua: awesome/custom_theme.lua
     ~/.config/awesome/rc.lua: awesome/rc.lua
