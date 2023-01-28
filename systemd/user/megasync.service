@@ -1,0 +1,10 @@
+[Unit]
+Description=Megasync client
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/megasync
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
