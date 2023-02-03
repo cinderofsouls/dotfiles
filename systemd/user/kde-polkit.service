@@ -3,6 +3,7 @@ Description=KDE polkit
 
 [Service]
 Type=simple
+ExecStartPre=/bin/sleep 5
 ExecStart=/usr/lib/polkit-kde-authentication-agent-1
 Restart=on-failure
 

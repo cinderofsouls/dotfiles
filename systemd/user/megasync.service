@@ -3,6 +3,7 @@ Description=Megasync client
 
 [Service]
 Type=simple
+ExecStartPre=/bin/sleep 5
 ExecStart=/usr/bin/megasync
 Restart=on-failure
 

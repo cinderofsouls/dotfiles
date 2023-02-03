@@ -3,6 +3,7 @@ Description=Green with envy
 
 [Service]
 Type=simple
+ExecStartPre=/bin/sleep 5
 ExecStart=/usr/bin/gwe
 Restart=on-failure
 
