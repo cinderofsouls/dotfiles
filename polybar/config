@@ -20,7 +20,8 @@
 ;background = ${xrdb:color0:#222}
 ;background = #222
 ;background = #1e1e28
-background = #191b28
+;background = #191b28
+background = #00000000
 background-alt = #363949
 ;foreground = ${xrdb:color7:#222}
 foreground = #cad3f5
