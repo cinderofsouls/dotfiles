@@ -11,6 +11,7 @@
     ~/.Xresources: home/Xresources
     ~/.zshrc: home/zshrc
 
+    ~/.cargo/config.toml: cargo/config.toml
     ~/.doom.d: doom-emacs
     ~/.screenlayout/layout.sh: layout.sh
 
