@@ -6,5 +6,6 @@ nitrogen --restore &
 echo "restored nitrogen wallpaper"
 ~/.config/polybar/launch.sh &
 echo "launched polybar"
-picom --config ~/.config/picom/picom.conf -b
+#picom --config ~/.config/picom/picom.conf -b
+picom &
 echo "launched picom"

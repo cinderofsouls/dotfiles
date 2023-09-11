@@ -6,3 +6,6 @@ if status is-interactive
     starship init fish | source
     zoxide init fish | source
 end
+
+# Created by `pipx` on 2023-08-06 09:26:55
+set PATH $PATH /home/trevor/.local/bin
