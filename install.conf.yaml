@@ -5,4 +5,6 @@
 - clean: ['~']
 
 - link:
+    ~/.config/helix: helix
     ~/.config/kitty: kitty  
+    
