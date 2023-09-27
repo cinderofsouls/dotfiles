@@ -5,3 +5,4 @@
 - clean: ['~']
 
 - link:
+    ~/.config/kitty: kitty  
