@@ -5,6 +5,8 @@
 - clean: ['~']
 
 - link:
+    ~/.config/hypr: hypr
+    
     ~/.config/fish: fish
     ~/.config/helix: helix
     ~/.config/kitty: kitty  
