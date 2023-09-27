@@ -6,6 +6,7 @@
 
 - link:
     ~/.config/hypr: hypr
+    ~/.config/waybar: waybar
     
     ~/.config/fish: fish
     ~/.config/helix: helix
