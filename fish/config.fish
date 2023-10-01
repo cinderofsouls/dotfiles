@@ -4,6 +4,8 @@ if status is-interactive
     set -x EDITOR helix
     set -x GRAVEYARD ~/.rip-trash
 
+    fish_add_path ~/.cargo/bin
+
     starship init fish | source
     zoxide init fish | source
 end
