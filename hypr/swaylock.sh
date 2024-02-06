@@ -26,7 +26,7 @@ color_red='ed8796'
 color_sky='91d7e3'
 
 swaylock \
-    --image ~/Wallpapers/shaded_landscape.jpg \
+    --image ~/.dotfiles/wallpaper.jpg \
     --clock \
     --indicator \
     --indicator-radius 120 \

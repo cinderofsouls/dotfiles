@@ -9,3 +9,6 @@ if status is-interactive
     starship init fish | source
     zoxide init fish | source
 end
+
+# opam configuration
+source /home/taylor/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
