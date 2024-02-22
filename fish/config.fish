@@ -5,6 +5,7 @@ if status is-interactive
     set -x GRAVEYARD ~/.rip-trash
 
     fish_add_path ~/.cargo/bin
+    fish_add_path ~/go/bin
 
     starship init fish | source
     zoxide init fish | source

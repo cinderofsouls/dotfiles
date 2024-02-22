@@ -10,6 +10,7 @@
     ~/.swaylock.sh: hypr/swaylock.sh
     
     ~/.config/fish: fish
+    ~/.config/starship.toml: starship/starship.toml
     ~/.config/helix: helix
     ~/.config/kitty: kitty  
     
