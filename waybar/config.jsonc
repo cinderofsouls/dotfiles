@@ -5,16 +5,25 @@
     // "width": 1280, // Waybar width
     // "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["clock"],
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["network", "pulseaudio", "tray"],
+    "modules-left": [
+        "clock"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "tray"
+    ],
     "tray": {
         "icon-size": 18,
         "spacing": 10
     },
     "clock": {
         "interval": 1,
-        "format": "{:  %I:%M:%S %p    %a, %b %e}",
+        // "format": "{:  %I:%M:%S %p    %a, %b %e}",
+        "format": " {:%I:%M:%S %p    %a, %b %e}",
         "format-alt": "{:  %H:%M:%S   %a, %b %e}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
@@ -43,9 +52,12 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [
+                "",
+                "",
+                ""
+            ]
         },
         "on-click": "pavucontrol"
     },
 }
-
